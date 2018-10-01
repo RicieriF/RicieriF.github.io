@@ -1,0 +1,411 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Programação Basica</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="E:\Nova pasta\TRABALHO\test\assets\css/main.css" />
+
+<div id="nav">
+  <div id="sup_direito">
+    <div id="login"><input type="text" placeholder="login"></div>
+    <div id="senha"><input type="password" placeholder="senha"></div>
+    <div id="cadastrar"><a href="cadastrar.php">cadastrar</a></div>
+  </div>
+</div>
+  </head>
+
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="#">Programação <span>Programa-Web</span></a></div>
+			</header>
+
+		<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+					<!-- Main -->
+			<section id="main">
+				<div class="inner">
+
+				<!-- One -->
+					<section id="one" class="wrapper style1">
+
+<div align="center">
+
+<hr>
+<p></a> O que é HTML?</p>
+<hr>
+
+<p>Ao acessar uma página web através de um navegador, ele é capaz de interpretar o código HTML e renderizá-lo de forma compreensível para o usuário final, exibindo textos, botões, etc. com as configurações definidas por meio das diversas tags que essa linguagem dispõe.</p>
+
+
+<p>Atualmente a <strong>HTML</strong> encontra-se na versão 5 e é padronizada pelo W3C (World Wide Web Consortium), uma organização internacional responsável por estabelecer padrões para a internet, como a linguagem XML, as CSS e o SOAP.</p>
+
+
+<h3>Estrutura básica de uma página HTML</h3>
+
+  <p>A <strong>estrutura básica de uma página HTML</strong> pode ser vista na <b>Listagem 1</b>, na qual podemos ver as principais tags que são necessárias para que o documento seja corretamente interpretado pelos browsers.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_563188" class="syntaxhighlighter nogutter  xml"><table border="1" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">01 &lt;!DOCTYPE html&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">02 &lt;</code><code class="xml keyword">html</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">03 &lt;</code><code class="xml keyword">head</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">04&nbsp;&nbsp;&nbsp;&nbsp; &lt;</code><code class="xml keyword">meta</code> <code class="xml color1">charset</code><code class="xml plain">=</code><code class="xml string">"UTF-8"</code><code class="xml plain">/&gt;</code></div><div class="line number5 index4 alt2"><code class="xml plain">05&nbsp;&nbsp;&nbsp;&nbsp; &lt;</code><code class="xml keyword">title</code><code class="xml plain">&gt;Document&lt;/</code><code class="xml keyword">title</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml plain">06 &lt;/</code><code class="xml keyword">head</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml plain">07 &lt;</code><code class="xml keyword">body</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml plain">08&nbsp;&nbsp;&nbsp;&nbsp; </code><code class="xml comments">&lt;!-- Conteúdo --&gt;</code></div><div class="line number9 index8 alt2"><code class="xml plain">09 &lt;/</code><code class="xml keyword">body</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml plain">10 &lt;/</code><code class="xml keyword">html</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+</div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 1</b>. Estrutura básica de uma página HTML
+    </span>
+
+    <p class="lf-explicacao-listagem">
+        Linha 1: a instrução DOCTYPE deve ser sempre a primeira a aparecer em uma página HTML e indica para o browser qual versão da linguagem está sendo usada. Nesse caso, estamos trabalhando com a HTML5, versão na qual a declaração do DOCTYPE é bastante simples, como podemos ver na listagem;
+    </p>
+    <p class="lf-explicacao-listagem">
+        Linhas 2 e 10: abertura e fechamento da tag html, que delimita o documento. Sendo assim, todas as demais tags da página devem estar nesse espaço;
+    </p>
+    <p class="lf-explicacao-listagem">
+        Linhas 3 e 6: abertura e fechamento da tag head, que define o cabeçalho do documento. O conteúdo nesse espaço não é visível no browser, mas contém instruções sobre seu conteúdo e comportamento. Dentro dessa tag, por exemplo, podem ser inseridas folhas de estilo e scripts;
+    </p>
+    <p class="lf-explicacao-listagem">
+        Linha 4: a tag meta, nesse caso, especifica qual conjunto de caracteres (character set ou charset) será usado para renderizar o texto da página. O UTF-8 contém todos os caracteres dos padrões Unicode e ASCII, sendo, portanto, o mais utilizado em páginas web. A mesma tag meta, porém com outros atributos, pode ser utilizada para outros fins, como na SEO (Search Engine Optimization);
+    </p>
+    <p class="lf-explicacao-listagem">
+        Linha 5:  a tag title define o título da página, aquele que aparece na janela/aba do navegador;
+    </p>
+    <p class="lf-explicacao-listagem">
+        Linhas 7 e 9: abertura e fechamento da tag body, marcando o espaço no qual deve estar contido o conteúdo visual da página. As demais tags que representam texto, botões, etc. devem ser adicionadas nesse intervalo;
+    </p>
+    <p class="lf-explicacao-listagem">
+        Linha 8: nessa linha podemos observar a sintaxe para adição de comentários em HTML. Esse trecho não é renderizado pelo browser.
+    </p>
+
+  <p>Para <strong>desenvolver páginas com HTML</strong>, basicamente precisamos de um editor de texto, como o Bloco de Notas do Windows, Nano e Emacs no Linux, entre vários outros. Há, ainda, editores com opções avançadas, como recursos de syntax hilghligt e autocomplete, como Sublime Text, Atom, Brackets e Visual Studio Code, que podem ser usados para <strong>editar documentos HTML</strong>.</p>
+
+  <p>Independente do editor utilizado, podemos simplesmente copiar o código da <b>Listagem 1</b> para um deles e salvar o arquivo com extensão <span class="code-tag">.html</span>. Em seguida, podemos abrir esse arquivo em um browser.</p>
+
+ 
+
+<h3>Tags do HTML</h3>
+
+  <p>Um documento HTML é composto por tags, as quais possuem um nome e aparecem entre os sinais <span class="lf-badge">&lt;</span> e <span class="lf-badge">&gt;</span>, como vimos na <b>Listagem 1</b>, por exemplo, em <span class="lf-badge">&lt;html&gt;</span> e <span class="lf-badge">&lt;head&gt;</span>.  Naquele exemplo também vimos que algumas tags precisam ser abertas e fechadas, como em <span class="lf-badge">&lt;body&gt;</span> <span class="lf-badge">&lt;/body&gt;</span>. Nesse caso, a tag de fechamento deve conter a barra / antes do nome. Outras, porém, não precisam ser fechadas, como a tag <span class="lf-badge">&lt;meta&gt;</span>. Nesses casos, a adição da barra / no final da própria tag, como vemos na linha 4 da <b>Listagem 1</b>, é opcional.</p>
+
+
+
+  <p>Outro aspecto importante da linguagem é que ela é case insensitive, ou seja, não leva em consideração a diferença entre letras maiúsculas e minúsculas. No entanto, o uso apenas de letras minúsculas tem sido utilizado como padrão pelos desenvolvedores.</p>
+
+  <p>Além dessas características, as tags também possuem atributos, como vemos na linha 4 da <b>Listagem 1</b>, na qual a tag meta possui o atributo <span class="lf-badge">charset=”UTF-8”</span>. Essas propriedades definem algumas características adicionais de cada tag e em alguns casos são obrigatórias. Seus valores devem aparecer entre aspas duplas, como no exemplo acima, ou em aspas simples, caso o próprio valor contenha aspas duplas.</p>
+
+
+<h3>Cabeçalhos do HTML</h3>
+
+  <p>Cabeçalhos são normalmente utilizados para identificar páginas e seções, e possuem aparência diferenciada do restante do texto. No HTML há seis níveis de cabeçalhos/títulos que podem ser utilizados por meio das tags h1, h2, h3, h4, h5 e h6, sendo h1 o maior/mais relevante e h6 o menor/menos relevante.</p>
+
+  <p>Na <b>Listagem 2</b> podemos ver como utilizar essas tags, e na Figura N temos o resultado desse código. Para testar esse código, basta copiá-lo para o espaço indicado na linha 8 da <b>Listagem 1</b> e salvar o documento com a extensão .html.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_413231" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">h1</code><code class="xml plain">&gt;Título de nível 1&lt;/</code><code class="xml keyword">h1</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">h2</code><code class="xml plain">&gt;Título de nível 2&lt;/</code><code class="xml keyword">h2</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">h3</code><code class="xml plain">&gt;Título de nível 3&lt;/</code><code class="xml keyword">h3</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">h4</code><code class="xml plain">&gt;Título de nível 4&lt;/</code><code class="xml keyword">h4</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">h5</code><code class="xml plain">&gt;Título de nível 5&lt;/</code><code class="xml keyword">h5</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">h6</code><code class="xml plain">&gt;Título de nível 6&lt;/</code><code class="xml keyword">h6</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 2</b>. Diferentes níveis de cabeçalho
+    </span>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico1.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 1.</b> Diferentes níveis de cabeçalho.</figcaption>
+  </figure>
+
+<h3>Parágrafos no HTML</h3>
+
+  <p>Parágrafos de texto são gerados na HTML por meio das tags <span class="lf-badge">&lt;p&gt;</span> <span class="lf-badge">&lt;/p&gt;</span>. Esse é um exemplo de tag cuja disposição na tela se dá em forma de bloco, ou seja, um parágrafo é posto sempre abaixo do outro.</p>
+
+  <p>O código a seguir adiciona três parágrafos, que podem ser visualizados na Figura 2.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_731587" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Primeiro parágrafo do texto.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Segundo parágrafo do texto.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Terceiro parágrafo do texto.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+</div>
+<div style="margin-top: 10px;"><a href="https://jsfiddle.net/gdugd0ce/" style="line-height: 0px !important;color: #FFF;border: none;background-color: #454545;padding: 10px 25px;position: relative; " target="_blank" title="Run">Run</a></div>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico2.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 2.</b> Parágrafos visualizados na página.</figcaption>
+  </figure>
+
+<h3>Imagens no HTML</h3>
+
+  <p>A inserção de imagens em uma <strong>página HTML</strong> pode ser feita por meio da tag img, que recebe no atributo src o endereço do arquivo a ser carregado. Além desse, outros dois atributos importantes são o alt, que indica um texto alternativo que será exibido caso o arquivo não possa ser carregado, e title, que indica o texto que aparecerá como tooltip ao passar o mouse sobre a figura.</p>
+
+  <p>O código a seguir insere uma imagem a partir do arquivo perfil.png, localizado na mesma pasta do arquivo HTML, e uma tag img apontando para um arquivo inexistente. Observe na Figura 3 que enquanto a primeira aparece corretamente, a segunda é exibida com um ícone de erro o texto alternativo que informamos. Note, ainda, que sobre a primeira figura está sendo exibido o tooltip definido no atributo title.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_652799" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">img</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"avatar.png"</code> <code class="xml color1">alt</code><code class="xml plain">=</code><code class="xml string">"Texto alternativo"</code> <code class="xml color1">title</code><code class="xml plain">=</code><code class="xml string">"Avatar"</code> <code class="xml plain">/&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">img</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"arquivo_inexistente.jpg"</code> <code class="xml color1">alt</code><code class="xml plain">=</code><code class="xml string">"Texto alternativo"</code> <code class="xml color1">title</code><code class="xml plain">=</code><code class="xml string">"Outra figura"</code><code class="xml plain">/&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+</div>
+
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico3.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 3.</b> Exemplos de uso da tag img.</figcaption>
+  </figure>
+
+
+<h3>Links no HTML</h3>
+
+  <p>Links são normalmente utilizados para direcionar o usuário para outras páginas, ou para outras partes da mesma página. Nos dois casos, utilizamos a tag a, que possui o atributo href no qual indicamos o destino daquele link.</p>
+
+  <p>O seguinte código mostra como adicionar um link para outra página, neste caso, indicada pelo arquivo pagina2.html.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_579963" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"pagina2.html"</code><code class="xml plain">&gt;Página 2&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+</div>
+
+  <p>Já o código abaixo mostra como adicionar um link para um elemento na mesma página. Nesse caso, ao clicar no link o browser mudará o foco para o elemento que possui o atributo id igual àquele indicado no href.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_43165" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">a</code> <code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"#paragrafo3"</code><code class="xml plain">&gt;Ir para o parágrafo 3&lt;/</code><code class="xml keyword">a</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml comments">&lt;!--outros elementos--&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code> <code class="xml color1">id</code><code class="xml plain">=</code><code class="xml string">"rodape"</code><code class="xml plain">&gt;Parágrafo no rodapé.&lt;/p</code></div></div></td></tr></tbody></table></div></div></code></div> 
+</div>
+
+  <p>Note também que nesse caso o href requer ainda o sinal de cerquilha (#) antes do id do elemento que será o foco do link.</p>
+
+
+<h3>Tabelas no HTML</h3>
+
+  <p>Tabelas são elementos utilizados com frequência para exibir dados de forma organizada em linhas e colunas. No HTML, elas são formadas por três tags básicas: table, para delimitar a tabela; tr, para indicar as linhas; e td para formar as colunas. A <b>Listagem 3</b> mostra um exemplo simples de tabela com 3 linhas e duas colunas, e seu resultado pode ser visto na Figura 4.</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_952298" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">table</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Linha 1, Coluna 1&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Linha 1, Coluna 2&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Linha 2, Coluna 1&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Linha 2, Coluna 2&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Linha 3, Coluna 1&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Linha 3, Coluna 2&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">table</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+</div>
+
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 3</b>.  Exemplo de uso de tabelas
+    </span>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico4.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 4.</b> Exemplo de tabela com 3 linhas e 2.</figcaption>
+  </figure>
+
+  <p>Existem ainda outras três tags utilizadas para delimitar, de forma mais organizada, as partes da tabela: thead para o cabeçalho; tbody para o corpo; e tfoot para o rodapé. A <b>Listagem 4</b> traz um exemplo de tabela mais complexa, utilizando todas as tags. Seu resultado é apresentado na Figura 5.</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_551733" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">table</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">thead</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">th</code><code class="xml plain">&gt;Produto&lt;/</code><code class="xml keyword">th</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">th</code><code class="xml plain">&gt;Preço&lt;/</code><code class="xml keyword">th</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">th</code><code class="xml plain">&gt;Quantidade&lt;/</code><code class="xml keyword">th</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">thead</code><code class="xml plain">&gt;</code></div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tbody</code><code class="xml plain">&gt;</code></div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Feijão&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number12 index11 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;R$ 8,75&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;1&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number15 index14 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number16 index15 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Arroz&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number17 index16 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;R$ 4,99&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number18 index17 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;2&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number19 index18 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number20 index19 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tbody</code><code class="xml plain">&gt;</code></div><div class="line number21 index20 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tfoot</code><code class="xml plain">&gt;</code></div><div class="line number22 index21 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number23 index22 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;Total&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number24 index23 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number25 index24 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">td</code><code class="xml plain">&gt;R$ 18,73&lt;/</code><code class="xml keyword">td</code><code class="xml plain">&gt;</code></div><div class="line number26 index25 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tr</code><code class="xml plain">&gt;</code></div><div class="line number27 index26 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;/</code><code class="xml keyword">tfoot</code><code class="xml plain">&gt;</code></div><div class="line number28 index27 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">table</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 4</b>. Tabela com cabeçalho e rodapé
+    </span>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico5.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 5.</b> Tabela com cabeçalho e rodapé.</figcaption>
+  </figure>
+
+  <p><em>Observação: Por padrão, as tabelas não possuem bordas. Isso deve ser adicionado por meio das CSS.</em></p>
+
+
+<h3>Listas no HTML</h3>
+
+  <p>Listas são elementos úteis para organizar e ordenar itens que estão relacionados de alguma forma. No HTML é possível criar três tipos de listas: ordenadas (com a tag ol), não ordenadas (com a tag ul), e de definição (por meio da tag dl). </p>
+
+  <p>Na <b>Listagem 5</b> temos um exemplo de lista ordenada, enquanto a <b>Listagem 6</b> traz um exemplo de lista não ordenada. Em seguida, a Figura 6 mostra o resultado dos dois códigos. Observe que cada item das primeiras listas é definido pela tag li.</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_173362" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">ol</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;Item 1&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;Item 2&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;Item 3&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">ol</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 5</b>. Lista ordenada
+    </span>
+
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_871633" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">ul</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;Item 1&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;Item 2&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">li</code><code class="xml plain">&gt;Item 3&lt;/</code><code class="xml keyword">li</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">ul</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 6</b>. Lista não ordenada
+    </span>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico6.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 6.</b> Listas ordenada e não ordenada.</figcaption>
+  </figure>
+
+  <p>As listas de definição têm um comportamento um pouco diferente, uma vez que cada item é composto por um título (dt) e uma definição (dd), semelhante ao que ocorre em dicionários, nos quais temos os verbetes e suas definições. Na <b>Listagem 7</b> temos um exemplo desse tipo de lista, com seu resultado ilustrado na Figura 7.</p>
+
+<div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_522452" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">dl</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">dt</code><code class="xml plain">&gt;Título 1&lt;/</code><code class="xml keyword">dt</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">dd</code><code class="xml plain">&gt;Definição 1&lt;/</code><code class="xml keyword">dd</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">dt</code><code class="xml plain">&gt;Título 2&lt;/</code><code class="xml keyword">dt</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">dd</code><code class="xml plain">&gt;Definição 2&lt;/</code><code class="xml keyword">dd</code><code class="xml plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">dt</code><code class="xml plain">&gt;Título 3&lt;/</code><code class="xml keyword">dt</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">dd</code><code class="xml plain">&gt;Definição 3&lt;/</code><code class="xml keyword">dd</code><code class="xml plain">&gt;</code></div><div class="line number8 index7 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">dl</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+</div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 7</b>. Exemplo de lista de definição
+    </span>
+
+<h3>Formulários no HTML</h3>
+
+    <p>Formulários são normalmente utilizados para integrar a página HTML a algum processamento no lado servidor. Nesses casos, a página envia dados para uma aplicação (Java, PHP, .NET, etc), que os recebe, trata e retorna algum resultado.</p>
+
+    <p>No HTML, geralmente usamos a tag form para delimitar a área na qual se encontram os campos a serem preenchidos pelo usuário, a fim de serem enviados para processamento no back-end (enquanto a página HTML é chamada de front-end da aplicação).</p>
+
+    <p>A <b>Listagem 8</b> mostra um exemplo de formulário com vários tipos de campos para entrada de dados e um botão para submetê-los ao servidor. Na Figura 8 vemos seu resultado.</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_551678" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">form</code> <code class="xml color1">action</code><code class="xml plain">=</code><code class="xml string">"salvar_dados.php"</code> <code class="xml color1">method</code><code class="xml plain">=</code><code class="xml string">"post"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"text"</code> <code class="xml color1">placeholder</code><code class="xml plain">=</code><code class="xml string">"Digite aqui"</code><code class="xml plain">&gt; &lt;</code><code class="xml keyword">br</code><code class="xml plain">/&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"checkbox"</code><code class="xml plain">&gt;Checkbox &lt;</code><code class="xml keyword">br</code><code class="xml plain">/&gt;</code></div><div class="line number4 index3 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"radio"</code><code class="xml plain">&gt;Radio button &lt;</code><code class="xml keyword">br</code><code class="xml plain">/&gt;</code></div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"range"</code><code class="xml plain">&gt; &lt;</code><code class="xml keyword">br</code><code class="xml plain">/&gt;</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"submit"</code> <code class="xml color1">value</code><code class="xml plain">=</code><code class="xml string">"Enviar"</code><code class="xml plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">form</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 8</b>. Formulário com campos
+    </span>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico8.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 8.</b> Formulário para envio de dados.</figcaption>
+  </figure>
+
+
+<h3>Formatação de texto</h3>
+
+    <p>As tags de formatação de texto ajudam a destacar trechos da parte escrita da página, seja para fins de SEO ou por requisitos do conteúdo. Formatações como negrito e itálico podem ser aplicadas com facilidade utilizando as várias tags disponíveis para esse fim:</p>
+
+    <ul>
+        <li><b>b</b> e <b>strong</b> para negrito/texto forte;</li>
+        <li><b>i</b> e <b>em</b> para itálico/ênfase;</li>
+        <li><b>sup</b> e <b>sub</b> para sobrescrito e subscrito, respectivamente;</li>
+        <li><b>ins</b> e <b>del</b> para indicar trechos que foram incluídos ou removidos, respectivamente;</li>
+        <li><b>small</b> para textos menores que o padrão;</li>
+        <li><b>mark</b> para texto destacado.</li>
+    </ul>
+
+    <p>Na <b>Listagem 9</b> vemos exemplos de uso dessas tags, e seu resultado pode ser observado em seguida, na Figura 9.</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_535639" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Texto em negrito com &lt;</code><code class="xml keyword">b</code><code class="xml plain">&gt;bold&lt;/</code><code class="xml keyword">b</code><code class="xml plain">&gt; e &lt;</code><code class="xml keyword">strong</code><code class="xml plain">&gt;strong&lt;/</code><code class="xml keyword">strong</code><code class="xml plain">&gt;.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Texto em itálico com &lt;</code><code class="xml keyword">i</code><code class="xml plain">&gt;italics&lt;</code><code class="xml keyword">i</code><code class="xml plain">&gt; e &lt;</code><code class="xml keyword">em</code><code class="xml plain">&gt;emphasis&lt;/</code><code class="xml keyword">em</code><code class="xml plain">&gt;.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Texto &lt;</code><code class="xml keyword">sup</code><code class="xml plain">&gt;sobrescrito&lt;/</code><code class="xml keyword">sup</code><code class="xml plain">&gt; e &lt;</code><code class="xml keyword">sub</code><code class="xml plain">&gt;subscrito&lt;/</code><code class="xml keyword">sub</code><code class="xml plain">&gt;.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Texto &lt;</code><code class="xml keyword">ins</code><code class="xml plain">&gt;inserido&lt;/</code><code class="xml keyword">ins</code><code class="xml plain">&gt; e &lt;</code><code class="xml keyword">del</code><code class="xml plain">&gt;excluído&lt;/</code><code class="xml keyword">del</code><code class="xml plain">&gt;.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Texto &lt;</code><code class="xml keyword">small</code><code class="xml plain">&gt;pequeno&lt;/</code><code class="xml keyword">small</code><code class="xml plain">&gt; e &lt;</code><code class="xml keyword">mark</code><code class="xml plain">&gt;destacado&lt;/</code><code class="xml keyword">mark</code><code class="xml plain">&gt;.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+    <span style="font-size: 12px;display: block;margin-bottom: 20px;">
+        <b style="color: #0F8593;">Listagem 9</b>. Tags de formatação de texto
+    </span>
+
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico9.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 9.</b> Textos com formatação especial.</figcaption>
+  </figure>
+
+
+<h3>Áudio no HTML</h3>
+
+    <p>Com HTML também é possível inserir áudio e vídeo nas páginas com facilidade. Para áudio, podemos utilizar a tag <b>audio</b>, da seguinte forma:</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_564329" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">audio</code> <code class="xml plain">controls </code><code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"musica.mp3"</code> <code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">Seu browser não suporta áudio.</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">audio</code><code class="xml plain">&gt; </code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+
+    <p>Na tag audio, o atributo <b>src</b> aponta para o arquivo de áudio que será executado (MP3, OGG ou WAV). Já o atributo <b>controls</b> indica que devem ser exibidos os controles de gerenciamento do áudio (botões play, pause, etc). Além dele, outros também merecem destaque: <b>autoplay</b>, para fazer com que o áudio seja executado assim que for carregado; <b>loop</b>, para que o áudio seja executado repetidas vezes. </p>
+
+    <p><i>Observação: Caso o browser não ofereça suporte a essa tag, o texto contido eu seu interior será exibido.</i></p>
+
+    <p>Também podemos informar mais de um arquivo de áudio (opções alternativas de formato, por exemplo). Nesse caso, precisamos utilizar a tag <b>source</b>, como no exemplo a seguir:</p>
+
+     <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_827159" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">audio</code> <code class="xml plain">controls </code><code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"musica.mp3"</code> <code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">source</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"musica.ogg"</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"audio/ogg"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">source</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"musica.mp3"</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"audio/mpeg"</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">audio</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+
+    <p>Dessa vez, os arquivos serão buscados na ordem em que aparecem na lista. Caso um não seja localizado ou não possa ser carregado, o browser buscará imediatamente o próximo.</p>
+
+    <p>A <b>Figura 10</b> ilustra o resultado desses códigos, com o controle de áudio exibido no browser. Note também que no topo da janela (na aba do navegador) é exibido um ícone informando ao usuário que essa página está executando um áudio.</p>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico10.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 10.</b> Áudio em execução na página.</figcaption>
+  </figure>
+
+
+
+<h3>Vídeo no HTML</h3>
+
+    <p>Semelhante ao áudio, também podemos inserir vídeos nas páginas HTML utilizando a tag <b>vídeo</b>, adicionada na HTML5, da seguinte forma:</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_845572" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">video</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"video.mp4"</code> <code class="xml color1">width</code><code class="xml plain">=</code><code class="xml string">"640"</code> <code class="xml color1">height</code><code class="xml plain">=</code><code class="xml string">"480"</code> <code class="xml plain">controls&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">Seu browser não suporta vídeo HTML5.</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">video</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+
+    <p>Dessa vez, além dos atributos já vistos no áudio, também precisamos informar a largura (<b>width</b>) e a altura (<b>height</b>) do vídeo, a fim de mantê-lo adequado ao layout.</p>
+
+    <p>O código a seguir pode ser utilizado quando desejarmos informar mais de um arquivo de vídeo como opções de carregamento, da mesma forma que vimos na tag <b>audio</b>. Nesse caso, os formatos suportados são MP4, WebM e Ogg.</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_327464" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">video</code> <code class="xml color1">width</code><code class="xml plain">=</code><code class="xml string">"640"</code> <code class="xml color1">height</code><code class="xml plain">=</code><code class="xml string">"480"</code> <code class="xml plain">controls&gt;</code></div><div class="line number2 index1 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">source</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"vdeio.webm"</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"video/webm"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">source</code> <code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"video.mp4"</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"video/mp4"</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">video</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+
+    <p>O resultado agora pode ser visto na Figura 11.</p>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/compactado/htmlbasico11.png" alt="HTML básico - códigos HTML"> <br>
+    <figcaption><b>Figura 11.</b> Vídeo em execução na página.</figcaption>
+  </figure>
+
+<h3>Div e Span no HTML</h3>
+
+    <p>As <a href="http://www.devmedia.com.br/como-centralizar-divs-em-html-e-css/37568" target="_blank" title="tags div e span">tags div e span</a> são duas das mais utilizadas no HTML, com objetivos distintos, porém com grande importância para a composição do layout das páginas e formatação do texto.</p>
+
+    <p>As divs são normalmente utilizados para representarem containers para outros elementos, agrupando-os visualmente dentro de um bloco que pode conter dimensões e posição definidas. Por padrão, uma div não possui aparência características visuais definidas, isso precisa ser feito via CSS ao atribuir bordas, cores, etc. Sua principal característica, no entanto, é que essa tag representa um elemento do tipo bloco, ou seja, que quando adicionado na página, automaticamente gera uma nova linha no layout (semelhante a um parágrafo), ao invés de ser alocado lateralmente nos demais componentes. </p>
+
+    <p>O código a seguir demonstra um uso básico das divs:</p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_972468" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"text"</code> <code class="xml color1">value</code><code class="xml plain">=</code><code class="xml string">"input 1"</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"text"</code> <code class="xml color1">value</code><code class="xml plain">=</code><code class="xml string">"input 2"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">div</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"text"</code> <code class="xml color1">value</code><code class="xml plain">=</code><code class="xml string">"input 3"</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">div</code><code class="xml plain">&gt;&lt;</code><code class="xml keyword">input</code> <code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"text"</code> <code class="xml color1">value</code><code class="xml plain">=</code><code class="xml string">"input 4"</code><code class="xml plain">&gt;&lt;/</code><code class="xml keyword">div</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+
+
+    <p>Perceba no resultado da <b>Figura 12</b> que, enquanto os dois primeiros inputs são dispostos lateralmente, os dois últimos aparecem um abaixo do outro, uma vez que estão dentro de divs diferentes.</p>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/htmlbasico12.png.bmp" alt="Exemplo de uso das DIVs"> <br>
+    <figcaption><b>Figura 12.</b> Exemplos de uso das divs.</figcaption>
+  </figure>
+    
+
+    <p>Já a tag span é um elemento do tipo inline, ou seja, quando adicionado na página, ele é inserido lateralmente após os demais componentes, diferente das divs que são elementos do tipo bloco.</p>
+
+    <p>Elementos span, por padrão, também não possuem nenhuma característica visual definida, isso precisa ser feito via CSS para destacar ou aplicar uma formatação especial para um certo trecho do texto. Por exemplo, o código abaixo demonstra o uso do span em dois casos. No primeiro, a tag não conta com nenhum atributo adicional; no segundo, adicionamos a ela uma aparência diferenciada via CSS. </p>
+
+    <div class="pre_xml code-sample">
+<div><code class="code-sample"><div><div id="highlighter_912535" class="syntaxhighlighter nogutter  xml"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;Este é um texto com um &lt;</code><code class="xml keyword">span</code><code class="xml plain">&gt;trecho em destaque&lt;/</code><code class="xml keyword">span</code><code class="xml plain">&gt;.&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">Este é um texto com um &lt;</code><code class="xml keyword">span</code> <code class="xml color1">style</code><code class="xml plain">=</code><code class="xml string">"background: #1abc9c; border-radius:5px; padding:5px"</code><code class="xml plain">&gt;trecho em destaque&lt;/</code><code class="xml keyword">span</code><code class="xml plain">&gt;.</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">p</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div></div></code></div>
+    </div>
+
+
+    <p>O resultado pode ser visto na <b>Figura 13</b> e, como esperado, no primeiro caso não conseguimos perceber nenhuma diferença visual devido ao uso do span.</p>
+
+    <figure>
+      <img style="height: auto; max-width: 100%" src="https://arquivo.devmedia.com.br/artigos/Joel_Rodrigues/HTMLBasico/htmlbasico13.png.bmp" alt="Exemplo de uso do SPAN"> <br>
+    <figcaption><b>Figura 13.</b> Exemplo de uso do span.</figcaption>
+  </figure>
+
+<p>Neste artigo vimos uma breve introdução à linguagem HTML, uma das bases do desenvolvimento web e que atualmente também vem sendo amplamente utilizada na criação de aplicativos mobile híbridos. Portanto, conhecer essa linguagem é fundamental para quem deseja desenvolver aplicações</p>
+
+
+
+    
+            </section>
+        </section>
+
+				</div>
+			</section>
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Ricieri Fernandez <a href="https://unsplash.com"></a> Universidade <a href="https://templated.co">UVV</a>
+				</div>
+			</footer>
+</div>			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
